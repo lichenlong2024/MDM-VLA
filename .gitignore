@@ -1,0 +1,51 @@
+﻿# Python/cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Environments and credentials
+.env
+.venv/
+venv/
+env/
+.hf_token
+.wandb_api_key
+.*_token
+.*api_key
+
+# Datasets, checkpoints, pretrained weights, logs
+cache/
+data/
+datasets/
+outputs/
+pretrained_models/
+wandb/
+wandb_alimu/
+rollouts/
+*.tfrecord*
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.wandb
+*.log
+
+# Large local artifacts
+*.zip
+*.tar
+*.tar.gz
+*.whl
+*.mp4
+*.avi
+*.mov
+*.pkl
+*.doc
+*.docx
+*.pdf
