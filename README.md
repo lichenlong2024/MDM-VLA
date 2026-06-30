@@ -4,6 +4,12 @@ This repository contains the core implementation of **MDM-VLA: Multimodal Discri
 
 The release is prepared for anonymous/reviewer inspection of the method implementation. It includes the model code, multimodal discriminator, sparse MoE action head, training scripts, discriminator validation scripts, LIBERO evaluation scripts, and real-robot deployment utilities. Datasets, checkpoints, pretrained backbone weights, logs, and paper source files are intentionally not included.
 
+## Reproducibility Documents
+
+- `REPRODUCIBILITY.md`: end-to-end reproduction guide for dataset preparation, discriminator training, policy fine-tuning, LIBERO evaluation, and real-robot deployment.
+- `ACTION_ID_SCHEMA.md`: default 18 action IDs, three-stage grouping, and RLDS annotation format.
+- `MODEL_AND_DATA.md`: what is included in this compact code release, what external assets are required, and the expected checkpoint structure.
+
 ## Core Components
 
 - `prismatic/models/action_id_discriminator.py`: multimodal action-ID discriminator with visual, proprioceptive, task, and action-history inputs.
@@ -68,4 +74,4 @@ Real-robot deployment utilities are under `experiments/robot/server_deploy/`.
 
 ## Notes for Reviewers
 
-The code is released as a compact method implementation package. Absolute paths in scripts are examples from the training environment and should be replaced with local paths before running. The method-specific logic is concentrated in the discriminator, stage routing, and sparse MoE action head files listed above.
+The code is released as a compact method implementation package. Paths in example commands should be replaced with local paths before running. The method-specific logic is concentrated in the discriminator, stage routing, and sparse MoE action head files listed above.
