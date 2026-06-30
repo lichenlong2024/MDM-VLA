@@ -289,7 +289,7 @@ def plot_structure(points, summary, out_png, out_pdf=None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-root", default=r"D:\VLAproject\liberorelatedata")
+    parser.add_argument("--data-root", default="data/liberorelatedata")
     parser.add_argument("--output", default="figure/action_id_single_task_structure.png")
     parser.add_argument("--output-pdf", default="figure/action_id_single_task_structure.pdf")
     parser.add_argument("--summary", default="figure/action_id_single_task_structure_summary.json")

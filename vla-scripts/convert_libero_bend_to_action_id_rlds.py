@@ -135,7 +135,7 @@ def main():
         "--input-version-dir",
         type=Path,
         required=True,
-        help="Path like C:\\Users\\HP\\tensorflow_datasets\\libero_bend\\1.0.0",
+        help="Path to the source TFDS/RLDS dataset directory, e.g., /path/to/tensorflow_datasets/libero_bend/1.0.0",
     )
     parser.add_argument(
         "--output-root",
